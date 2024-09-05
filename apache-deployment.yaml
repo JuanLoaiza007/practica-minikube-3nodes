@@ -5,7 +5,7 @@ metadata:
   labels:
     app: httpd
 spec:
-  replicas: 10
+  replicas: 5
   selector:
     matchLabels:
       app: httpd
@@ -15,7 +15,7 @@ spec:
         app: httpd
     spec:
       containers:
-        - name: httpd
+        - name: httpd-container
           image: httpd:2.4.56
           ports:
             - containerPort: 80
