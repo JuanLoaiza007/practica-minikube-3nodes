@@ -1,0 +1,9 @@
+# Este es un pod de prueba que no discrimina selectores o etiquetas
+apiVersion: v1
+kind: Pod
+metadata:
+  name: test-pod
+spec:
+  containers:
+    - name: nginx-test-pod-container
+      image: nginx
