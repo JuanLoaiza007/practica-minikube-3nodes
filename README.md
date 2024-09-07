@@ -58,16 +58,18 @@ En esta seccion se explica como crear, eliminar, iniciar y detener clusters de K
 >
 > Minikube y Kubectl usan contextos distintos, por lo general minikube puede cambiar su propio contexto y el de kubectl pero es necesario que este pendiende de que esta usando el mismo contexto en ambos para no causar conflictos ni daños en sus cluster.
 
-> [!NOTE]
->
-> **TIP 1**
->
-> - Puede usar el comando "minikube profile list" para comparar, "Active Profile" es el contexto que usa minikube y "Active Kubecontext" es el contexto que usa kubectl.
-> - Puede usar el comando "kubectl config get-contexts" para ver el contexto que usa únicamente kubectl.
+- Puede usar el comando siguiente comando para revisar los contextos que usa Minikube y Kubectl:
+
+      minikube profile list
+
+  - **Active Profile** es el contexto que esta usando minikube.
+  - **Active Kubecontext** es el contexto que esta usando kubectl.
+
+- Puede usar el comando el siguiente comando para ver que contexto se esta usando actualmente en kubectl:
+
+        kubectl config get-contexts
 
 > [!TIP]
->
-> **TIP 2**
 >
 > Para este tutorial entiendase "contexto", "perfil" y "cluster" como sinónimos que se refieren a lo mismo.
 
