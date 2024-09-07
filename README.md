@@ -56,7 +56,7 @@ En esta seccion se explica como crear, eliminar, iniciar y detener clusters de K
 
 > [!WARNING]
 >
-> Minikube y Kubectl usan contextos distintos, por lo general minikube puede cambiar su propio contexto y el de kubectl pero es necesario que este pendiende de que esta usando el mismo contexto en ambos para no causar conflictos ni daños en sus cluster.
+> Minikube y kubectl manejan contextos diferentes. Aunque Minikube puede cambiar tanto su propio contexto como el de kubectl, es crucial revisar manualmente que cluster se está usando en cada caso para evitar conflictos, daños o mofidicaciones no deseadas.
 
 - Puede usar el comando siguiente comando para revisar los contextos que usa Minikube y Kubectl:
 
